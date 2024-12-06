@@ -1,0 +1,124 @@
+:root {
+    --body-bg-color: #121214;
+    --text-color: #E1E1E6;
+    --title-color: #04D361;
+    --form-color: #A8A8A8;
+    --bg-button-color: #8257e5;
+  }
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  border: none;
+}
+
+body{
+  width: 100vw;
+  display: grid;
+  grid-template-columns: 45rem 1fr;
+  font-family: 'Spartan', 'Work sans', sans-serif;
+}
+
+main{
+  height: 100vh;
+  background-color: var(--body-bg-color);
+}
+
+aside{
+  height: 100vh;
+  background-image: url(./img/read_news.jpg); /*imagem ilustrativa do site */
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.container{
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+
+.logo{
+  max-width: 389px;
+  margin-top: 50px;
+  margin-left: 30px;
+}
+
+.logo > img{
+  width: 100%;
+  height: 94px;
+}
+
+.news-info {
+  width: 640px;
+  margin-top: 92px;
+  margin-left: 36px;
+}
+
+.news-info h2{
+  color: var(--title-color);
+  font: 700 1.5rem/1.75 'Work Sans', sans-serif;
+}
+
+.news-info h3{
+  color: var(--text-color);
+  font: 700 1.5rem/1 'Work Sans', sans-serif;
+  margin-top: 8px;
+}
+
+.news-info p{
+  color: var(--form-color);
+  font: 700 0.88rem/1.21 'Work Sans', sans-serif;
+  margin-top: 8px;
+}
+
+#form{
+  margin-left: 2.25rem;
+  margin-top: 50px;
+}
+
+#form > fieldset{
+  padding: 0;
+}
+
+fieldset > legend{
+  color: var(--form-color);
+  font: 700 0.75rem/1.18 'Spartan',sans-serif;
+}
+
+#email{
+  margin-top: 1rem;
+  width: 49rem;
+  display: flex;
+}
+
+#email > input{
+  width: 49rem;
+  border-left: 5px solid var(--title-color);
+  filter: drop-shadow(4px 10px 15px rgba(0,0,0,0.5));
+  font: 400 0.75rem/0.87 'Work Sans', sans-serif;
+  color: var(--form-color);
+  padding: 10px;
+}
+
+#email > button{
+  width: 48px;
+  height: 48px;
+  background-color: var(--bg-button-color);
+  z-index: 1;
+}
+
+.link{
+  margin-top: 50px;
+  margin-left: 36px;
+}
+
+.link a{
+  color: var(--bg-button-color);
+  font: 700 0.88rem/1.18 'Spartan', sans-serif;
+  display: flex;
+  align-items: center;
+}
